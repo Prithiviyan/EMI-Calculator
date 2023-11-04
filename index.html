@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ========== Start title ========== -->
+    <title>EMI Calculator</title>
+    <!-- ========== End title ========== -->
+
+    <!-- ========== Start style link ========== -->
+    <link rel="stylesheet" href="C:\Users\prith\Desktop\EMI calculator\style.css">
+    <!-- ========== End style link ========== -->
+   
+    
+</head>
+
+<body>
+
+    <!-- ========== Start Main-Container ========== -->
+     <div class="container">
+
+        <!-- ========== Start Navbar-Section ========== -->
+        <div class="navbar">
+            <div class="first-nav">
+               <div class="logo">
+                <img src="./assets/logo.png" alt="logo" width="120px" >
+               </div>
+               <div class="nav-head">
+                <span class="pages">Pages</span>
+                <span class="pages">></span>
+                <span class="emi">EMI Calculator</span>
+               </div>
+
+            </div>
+            <div class="side-nav">
+                 <div class="side-head">
+                    <img src="./assets/faq.png" alt="help" width="20px" height="20px">
+                <span class="need">Need Help?</span>
+                <span class="line">|</span>
+                <img src="./assets/boy.png" alt="avatar" class="avatar" width="50px">
+                 </div>
+            </div>
+        </div>
+        <!-- ========== End Navbar-Section ========== -->
+
+     <!-- ========== Start Sub-Main-Container ========== -->
+     <div class="sides">
+
+        <!-- ========== Start Side-Container ========== -->
+        <div class="side-container">
+            <div class="side-content">
+               <ul class="content">
+                <li><img src="./assets/dashboard.png" alt="dashboard" width="20px"><span>Dashboard</span></li>
+                <li class="calc"><img src="./assets/icons8-plus-minus-30 (1).png"  alt="emical" width="20px"><span>EMI Calc</span></li>
+                <li><img src="./assets/file.png" alt="invoice" width="20px"><span>Invoice Generator</span></li>
+               </ul>
+            </div>
+        </div>
+        <!-- ========== End Side-Container ========== -->
+
+       <!-- ========== Start Hero-Section ========== -->
+       <div class="hero-section">
+        <div class="hero-head">
+            <h2 class="home">Home Loan</h2>
+            <h2 class="ploan">Personal Loan</h2>
+        </div>
+
+        <!-- ========== Start Hero-Main-Content ========== -->
+        <div class="main-content">
+
+            <!-- ========== Start Main-First-Content ========== -->
+            <div class="first-content">
+                <div class="loan">
+                    <h2 class="lhead">Loan Amount</h2>
+                    <input type="number" id="loan-amount" autocomplete="off" required>
+                    <img src="./assets/rupee.png" alt="rupee" width="20px">
+                    <p>Enter a amount without any spaces</p>
+                </div>
+                <div class="intrest">
+                    <h2 class="lhead">Intrest Rate</h2>
+                    <input type="number"  id="intrest-rate"  autocomplete="off" required>
+                    <img src="./assets/percentage.png" alt="percentage" width="15px">
+                    <p>Eg 7.5%</p>
+                </div>
+            </div>
+            <!-- ========== End Main-First-Content ========== -->
+
+            <!-- ========== Start Main-Second-Content ========== -->
+            <div class="second-content">
+                <div class="tenure">
+                    <h2 class="lhead">Loan Tenure</h2>
+                    <input type="number" id="loan-tenure" autocomplete="off"  required>
+                    <p>Enter a Loan Tenure in Months / Years</p>
+                </div>
+                <div class="check">
+                    <input type="radio" name="tenure-type" id="yearly" value="yearly" checked>
+                    <label for="yearly">Yearly</label>
+                    <input type="radio" name="tenure-type" id="monthly" value="monthly">
+                    <label for="monthly">Monthly</label>
+                </div>
+            </div>
+            <!-- ========== End Main-Second-Content ========== -->
+
+           <!-- ========== Start Main-View-Results ========== -->
+           <div class="view-results">
+            <div class="value">
+              <div class="value1">
+                <span>Loan EMI :</span>
+                <h1 class="loanamount"></h1>
+              </div>
+            <div class="value2">
+                <span>Total Intrest Payable :</span>
+                <h1 class="totalintrest"></h1>
+                
+            </div>
+            <div class="value3">
+                <span>Total Payment (Principal + Intrest) :</span>
+                <h1 class="totalamount"></h1>
+            </div>
+            </div>
+        </div>
+           <!-- ========== End Main-View-Results ========== -->
+            
+        <!-- ========== Start Main-Button ========== -->
+        <div class="calculate">
+            <button class="btn" id="calculate">Calculate</button>
+        </div>
+        <!-- ========== End Main-Button ========== -->
+              
+        </div>
+        <!-- ========== End Hero-Main-Content ========== -->
+      
+    </div>
+       <!-- ========== End Hero-Section ========== -->
+       
+    </div>
+     <!-- ========== End Sub-Main-Container ========== -->
+       
+ </div>
+    <!-- ========== End Main-Container ========== -->
+    
+    <!-- ========== Start JS-file Link ========== -->
+    <script src="C:\Users\prith\Desktop\EMI calculator\main.js"></script>
+    <!-- ========== End JS-file Link ========== -->
+           
+</body>
+</html>
